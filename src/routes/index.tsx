@@ -2,10 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import heroImage from "@/assets/hero-tools.jpg";
 import workshopImage from "@/assets/riving-workshop.jpg";
 import grainImage from "@/assets/grain-macro.jpg";
-import spoonImage from "@/assets/product-spoon.jpg";
-import spatulaImage from "@/assets/product-spatula.jpg";
-import bowlImage from "@/assets/product-bowl.jpg";
-import boardImage from "@/assets/product-board.jpg";
+import { products } from "@/lib/products";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -22,32 +19,15 @@ export const Route = createFileRoute("/")({
 });
 
 const fibres = ["Split, not sawn", "Dry wood", "Whole fibres", "The crook of a branch", "Growth rings", "No two alike"];
-const products = [
-  { name: "Spoon — Crook", material: "Riven cherry", price: "$38", image: spoonImage, alt: "Hand-carved riven cherry spoon with a natural crook in the handle, grain flowing from handle tip into the bowl" },
-  { name: "Spatula — Sweep", material: "Riven beech", price: "$32", image: spatulaImage, alt: "Hand-carved riven beech spatula with a thin swept blade and flowing grain" },
-  { name: "Bowl — Turned", material: "Reclaimed oak", price: "$74", image: bowlImage, alt: "Hand-turned reclaimed oak bowl" },
-  { name: "Board — Cleaved", material: "Riven birch", price: "$56", image: boardImage, alt: "Cleaved riven birch chopping board with whole fibres along the bark edge" },
-];
 
 function Index() {
   return (
     <main className="overflow-hidden bg-background">
-      <header className="absolute inset-x-0 top-0 z-30 border-b border-primary-foreground/20 text-primary-foreground">
-        <div className="flex items-center justify-between px-5 py-5 sm:px-8 lg:px-12">
-          <a href="#top" className="font-serif text-2xl leading-none">Riven Wood</a>
-          <nav aria-label="Primary navigation" className="hidden items-center gap-8 text-xs uppercase md:flex">
-            <a href="#riving" className="transition-opacity hover:opacity-60">Riving</a>
-            <a href="#grain" className="transition-opacity hover:opacity-60">The grain</a>
-            <a href="#utensils" className="transition-opacity hover:opacity-60">Utensils</a>
-          </nav>
-          <a href="#utensils" className="border-b border-primary-foreground/60 pb-1 text-xs uppercase">Bag · 0</a>
-        </div>
-      </header>
 
       <section id="top" className="relative flex flex-col bg-primary text-primary-foreground pb-16 md:h-[min(70svh,55.8vw)] md:min-h-[520px] md:pb-0">
         <img src={heroImage} width={1376} height={768} alt="Carving knives, a hooked spoon knife, a damascus axe and two sharpening stones laid out on a sawdust-covered bench" className="absolute inset-0 h-full w-full object-cover image-rise" />
         <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/75 to-primary/25 sm:via-primary/40 sm:to-transparent" />
-        <div className="relative z-10 flex flex-1 flex-col justify-end px-5 pb-14 pt-28 sm:px-8 lg:px-12 lg:pb-20">
+        <div className="relative z-10 flex flex-1 flex-col justify-end px-5 pb-14 pt-16 sm:px-8 lg:px-12 lg:pb-20">
           <p className="mb-5 text-xs uppercase text-accent">The grain decides the spoon</p>
           <h1 className="max-w-4xl font-serif text-6xl leading-[0.88] sm:text-7xl lg:text-9xl">Rift & <br /><em className="text-secondary">Curve</em></h1>
           <div className="mt-8 flex max-w-3xl flex-col gap-6 border-t border-primary-foreground/30 pt-6 md:flex-row md:items-end md:justify-between">
@@ -111,13 +91,6 @@ function Index() {
         </div>
       </section>
 
-      <footer className="bg-primary px-5 py-14 text-primary-foreground sm:px-8 lg:px-12">
-        <div className="flex flex-col gap-12 md:flex-row md:items-end md:justify-between">
-          <div><p className="font-serif text-5xl">Riven Wood</p><p className="mt-4 max-w-sm text-sm leading-relaxed text-primary-foreground/60">A spoon carved from riven wood is not imposed on the wood. It is found within it, shaped by the same fibres that once carried water from the roots to the leaves.</p></div>
-          <nav aria-label="Footer navigation" className="flex flex-wrap gap-7 text-xs uppercase text-primary-foreground/60"><a href="#riving">Riving</a><a href="#grain">The grain</a><a href="#utensils">Utensils</a><a href="mailto:workshop@rivenwood.example">Contact</a></nav>
-        </div>
-        <div className="mt-12 flex flex-col justify-between gap-2 border-t border-primary-foreground/15 pt-5 text-[10px] uppercase text-primary-foreground/40 sm:flex-row"><span>© 2026 Riven Wood Workshop</span><span>The grain decides the spoon</span></div>
-      </footer>
     </main>
   );
 }
