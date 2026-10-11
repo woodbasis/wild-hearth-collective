@@ -79,7 +79,7 @@ function Index() {
       </section>
 
       <section id="grain" className="grid min-h-[86svh] bg-primary text-primary-foreground lg:grid-cols-2">
-        <img src={grainImage} width={912} height={1200} loading="lazy" alt="Close detail of freshly split wood, whole fibres and medullary rays running end to end" className="h-full max-h-[86svh] min-h-[55svh] w-full object-cover" />
+        <img src={grainImage} width={896} height={1200} loading="lazy" alt="Eight hand-carved wooden spatulas, a spoon and a spreader standing in a row on a cream sheepskin rug, each showing its own grain, bark edges and carved handle" className="h-full max-h-[86svh] min-h-[55svh] w-full object-cover" />
         <div className="flex flex-col justify-center px-5 py-16 sm:px-8 lg:px-16">
           <p className="text-xs uppercase text-accent">Why riven is stronger · 02</p>
           <h2 className="mt-6 max-w-xl font-serif text-5xl leading-[0.95] sm:text-6xl lg:text-7xl">Every fibre whole, from end to end.</h2>
