@@ -9,3 +9,4 @@
 - [x] Take the fire out of the hero's fireplace — unlit logs, no flames or orange glow — leaving the rest of the scene untouched.
 - [x] Put the earlier hero photo back as the homepage hero: iron hood and hanging pot over low embers, table with pan, spoon, chopping board and wildflowers.
 - [x] Replace all site copy with the "Riven Wood: The Grain Decides the Spoon" article — rebrand as Riven Wood, new section story (riving, grain strength, fibre-following utensils), and matching imagery (workshop, grain macro, spoon, spatula, cleaved board).
+- [x] Use the user's own photo of carving tools on a sawdust bench as the homepage hero, extended sideways into a wide banner so no tool is sliced off and the left stays clear for the headline.
