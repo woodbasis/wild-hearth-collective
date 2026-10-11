@@ -28,7 +28,7 @@ function BrandIcon({ icon }: { icon: (typeof ICONS)[number] }) {
           <text x="12" y="16.5" textAnchor="middle" fontSize="10.5" fontWeight="700" fontFamily="Work Sans, sans-serif" fill="#ffffff">iS</text>
         </>
       ) : (
-        <path d={icon.path} fill={icon.color} />
+        <path d={icon.path} fill={icon.color} stroke={icon.stroke} strokeWidth={icon.stroke ? 0.7 : undefined} />
       )}
     </svg>
   );
