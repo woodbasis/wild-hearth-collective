@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import heroImage from "@/assets/terra-hero.jpg";
+import heroImage from "@/assets/hero-tools.jpg";
 import workshopImage from "@/assets/riving-workshop.jpg";
 import grainImage from "@/assets/grain-macro.jpg";
 import spoonImage from "@/assets/product-spoon.jpg";
@@ -44,10 +44,10 @@ function Index() {
         </div>
       </header>
 
-      <section id="top" className="relative min-h-[94svh] bg-primary text-primary-foreground">
-        <img src={heroImage} width={1376} height={768} alt="Rustic stone kitchen with a weathered wooden table holding a cast iron pan with a wooden spoon, a thick old chopping board and a jug of wildflowers, a stone fireplace with a hanging pot above glowing embers set back across the flagstone floor" className="absolute inset-0 h-full w-full object-cover image-rise" />
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/85 via-primary/35 to-transparent" />
-        <div className="relative z-10 flex min-h-[94svh] flex-col justify-end px-5 pb-14 pt-28 sm:px-8 lg:px-12 lg:pb-20">
+      <section id="top" className="relative flex flex-col bg-primary text-primary-foreground pb-16 md:h-[min(70svh,55.8vw)] md:min-h-[520px] md:pb-0">
+        <img src={heroImage} width={1376} height={768} alt="Carving knives, a hooked spoon knife, a damascus axe and two sharpening stones laid out on a sawdust-covered bench" className="absolute inset-0 h-full w-full object-cover image-rise" />
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/75 to-primary/25 sm:via-primary/40 sm:to-transparent" />
+        <div className="relative z-10 flex flex-1 flex-col justify-end px-5 pb-14 pt-28 sm:px-8 lg:px-12 lg:pb-20">
           <p className="mb-5 text-xs uppercase text-accent">The grain decides the spoon</p>
           <h1 className="max-w-4xl font-serif text-6xl leading-[0.88] sm:text-7xl lg:text-9xl">Split, not sawn —<br /><em className="text-secondary">the wood decides.</em></h1>
           <div className="mt-8 flex max-w-3xl flex-col gap-6 border-t border-primary-foreground/30 pt-6 md:flex-row md:items-end md:justify-between">
