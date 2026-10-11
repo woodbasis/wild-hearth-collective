@@ -1,6 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
-import { SocialLinks } from "@/components/SocialLinks";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
@@ -22,7 +21,6 @@ function Contact() {
   return (
     <main className="grid gap-16 bg-background px-5 py-20 sm:px-8 lg:grid-cols-2 lg:px-12 lg:py-28">
       <div>
-        <SocialLinks />
         <p className="text-xs uppercase text-secondary">Contact</p>
         <h1 className="mt-4 font-serif text-6xl leading-[0.9] text-primary sm:text-7xl">Let's talk wood.</h1>
         <p className="mt-6 max-w-md leading-relaxed text-primary/70">Questions about an order, a custom piece, or visiting the workshop? Write to us and we'll reply within two days.</p>

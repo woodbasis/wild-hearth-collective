@@ -34,9 +34,9 @@ function BrandIcon({ icon }: { icon: (typeof ICONS)[number] }) {
   );
 }
 
-export function SocialLinks() {
+export function SocialLinks({ className = "", tile = false }: { className?: string; tile?: boolean }) {
   return (
-    <ul className="flex flex-wrap items-center gap-4">
+    <ul className={`flex flex-wrap items-center gap-3 ${className}`}>
       {ICONS.map((icon) => (
         <li key={icon.key}>
           <a
@@ -45,7 +45,9 @@ export function SocialLinks() {
             rel="noopener noreferrer"
             aria-label={icon.title}
             title={icon.title}
-            className="inline-flex transition-transform duration-200 hover:scale-110"
+            className={`inline-flex items-center justify-center transition-transform duration-200 hover:scale-110 ${
+              tile ? "h-9 w-9 rounded-full bg-background" : ""
+            }`}
           >
             <BrandIcon icon={icon} />
           </a>
