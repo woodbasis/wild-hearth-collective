@@ -12,8 +12,17 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as BlogRouteImport } from './routes/blog'
+import { Route as CareersRouteImport } from './routes/careers'
+import { Route as ChartsRouteImport } from './routes/charts'
 import { Route as ContactRouteImport } from './routes/contact'
+import { Route as GivingBackRouteImport } from './routes/giving-back'
+import { Route as GlobalRouteImport } from './routes/global'
+import { Route as MerchantRouteImport } from './routes/merchant'
+import { Route as PrivacyRouteImport } from './routes/privacy'
+import { Route as SecurityRouteImport } from './routes/security'
 import { Route as ShopRouteImport } from './routes/shop'
+import { Route as StaffRouteImport } from './routes/staff'
+import { Route as TeamRouteImport } from './routes/team'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -30,9 +39,44 @@ const BlogRoute = BlogRouteImport.update({
   path: '/blog',
   getParentRoute: () => rootRouteImport,
 } as any)
+const CareersRoute = CareersRouteImport.update({
+  id: '/careers',
+  path: '/careers',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ChartsRoute = ChartsRouteImport.update({
+  id: '/charts',
+  path: '/charts',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ContactRoute = ContactRouteImport.update({
   id: '/contact',
   path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GivingBackRoute = GivingBackRouteImport.update({
+  id: '/giving-back',
+  path: '/giving-back',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GlobalRoute = GlobalRouteImport.update({
+  id: '/global',
+  path: '/global',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MerchantRoute = MerchantRouteImport.update({
+  id: '/merchant',
+  path: '/merchant',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PrivacyRoute = PrivacyRouteImport.update({
+  id: '/privacy',
+  path: '/privacy',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SecurityRoute = SecurityRouteImport.update({
+  id: '/security',
+  path: '/security',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ShopRoute = ShopRouteImport.update({
@@ -40,43 +84,132 @@ const ShopRoute = ShopRouteImport.update({
   path: '/shop',
   getParentRoute: () => rootRouteImport,
 } as any)
+const StaffRoute = StaffRouteImport.update({
+  id: '/staff',
+  path: '/staff',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TeamRoute = TeamRouteImport.update({
+  id: '/team',
+  path: '/team',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/blog': typeof BlogRoute
+  '/careers': typeof CareersRoute
+  '/charts': typeof ChartsRoute
   '/contact': typeof ContactRoute
+  '/giving-back': typeof GivingBackRoute
+  '/global': typeof GlobalRoute
+  '/merchant': typeof MerchantRoute
+  '/privacy': typeof PrivacyRoute
+  '/security': typeof SecurityRoute
   '/shop': typeof ShopRoute
+  '/staff': typeof StaffRoute
+  '/team': typeof TeamRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/blog': typeof BlogRoute
+  '/careers': typeof CareersRoute
+  '/charts': typeof ChartsRoute
   '/contact': typeof ContactRoute
+  '/giving-back': typeof GivingBackRoute
+  '/global': typeof GlobalRoute
+  '/merchant': typeof MerchantRoute
+  '/privacy': typeof PrivacyRoute
+  '/security': typeof SecurityRoute
   '/shop': typeof ShopRoute
+  '/staff': typeof StaffRoute
+  '/team': typeof TeamRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/blog': typeof BlogRoute
+  '/careers': typeof CareersRoute
+  '/charts': typeof ChartsRoute
   '/contact': typeof ContactRoute
+  '/giving-back': typeof GivingBackRoute
+  '/global': typeof GlobalRoute
+  '/merchant': typeof MerchantRoute
+  '/privacy': typeof PrivacyRoute
+  '/security': typeof SecurityRoute
   '/shop': typeof ShopRoute
+  '/staff': typeof StaffRoute
+  '/team': typeof TeamRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/about' | '/blog' | '/contact' | '/shop'
+  fullPaths:
+    | '/'
+    | '/about'
+    | '/blog'
+    | '/careers'
+    | '/charts'
+    | '/contact'
+    | '/giving-back'
+    | '/global'
+    | '/merchant'
+    | '/privacy'
+    | '/security'
+    | '/shop'
+    | '/staff'
+    | '/team'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/about' | '/blog' | '/contact' | '/shop'
-  id: '__root__' | '/' | '/about' | '/blog' | '/contact' | '/shop'
+  to:
+    | '/'
+    | '/about'
+    | '/blog'
+    | '/careers'
+    | '/charts'
+    | '/contact'
+    | '/giving-back'
+    | '/global'
+    | '/merchant'
+    | '/privacy'
+    | '/security'
+    | '/shop'
+    | '/staff'
+    | '/team'
+  id:
+    | '__root__'
+    | '/'
+    | '/about'
+    | '/blog'
+    | '/careers'
+    | '/charts'
+    | '/contact'
+    | '/giving-back'
+    | '/global'
+    | '/merchant'
+    | '/privacy'
+    | '/security'
+    | '/shop'
+    | '/staff'
+    | '/team'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
   BlogRoute: typeof BlogRoute
+  CareersRoute: typeof CareersRoute
+  ChartsRoute: typeof ChartsRoute
   ContactRoute: typeof ContactRoute
+  GivingBackRoute: typeof GivingBackRoute
+  GlobalRoute: typeof GlobalRoute
+  MerchantRoute: typeof MerchantRoute
+  PrivacyRoute: typeof PrivacyRoute
+  SecurityRoute: typeof SecurityRoute
   ShopRoute: typeof ShopRoute
+  StaffRoute: typeof StaffRoute
+  TeamRoute: typeof TeamRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -102,11 +235,60 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BlogRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/careers': {
+      id: '/careers'
+      path: '/careers'
+      fullPath: '/careers'
+      preLoaderRoute: typeof CareersRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/charts': {
+      id: '/charts'
+      path: '/charts'
+      fullPath: '/charts'
+      preLoaderRoute: typeof ChartsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/contact': {
       id: '/contact'
       path: '/contact'
       fullPath: '/contact'
       preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/giving-back': {
+      id: '/giving-back'
+      path: '/giving-back'
+      fullPath: '/giving-back'
+      preLoaderRoute: typeof GivingBackRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/global': {
+      id: '/global'
+      path: '/global'
+      fullPath: '/global'
+      preLoaderRoute: typeof GlobalRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/merchant': {
+      id: '/merchant'
+      path: '/merchant'
+      fullPath: '/merchant'
+      preLoaderRoute: typeof MerchantRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/privacy': {
+      id: '/privacy'
+      path: '/privacy'
+      fullPath: '/privacy'
+      preLoaderRoute: typeof PrivacyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/security': {
+      id: '/security'
+      path: '/security'
+      fullPath: '/security'
+      preLoaderRoute: typeof SecurityRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/shop': {
@@ -116,6 +298,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ShopRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/staff': {
+      id: '/staff'
+      path: '/staff'
+      fullPath: '/staff'
+      preLoaderRoute: typeof StaffRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/team': {
+      id: '/team'
+      path: '/team'
+      fullPath: '/team'
+      preLoaderRoute: typeof TeamRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -123,8 +319,17 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
   BlogRoute: BlogRoute,
+  CareersRoute: CareersRoute,
+  ChartsRoute: ChartsRoute,
   ContactRoute: ContactRoute,
+  GivingBackRoute: GivingBackRoute,
+  GlobalRoute: GlobalRoute,
+  MerchantRoute: MerchantRoute,
+  PrivacyRoute: PrivacyRoute,
+  SecurityRoute: SecurityRoute,
   ShopRoute: ShopRoute,
+  StaffRoute: StaffRoute,
+  TeamRoute: TeamRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
