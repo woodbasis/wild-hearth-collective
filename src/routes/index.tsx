@@ -44,9 +44,9 @@ function Index() {
         </div>
       </header>
 
-      <section id="top" className="relative flex h-[min(70svh,55.8vw)] min-h-[520px] flex-col bg-primary text-primary-foreground">
+      <section id="top" className="relative flex flex-col bg-primary text-primary-foreground pb-16 md:h-[min(70svh,55.8vw)] md:min-h-[520px] md:pb-0">
         <img src={heroImage} width={1376} height={768} alt="Carving knives, a hooked spoon knife, a damascus axe and two sharpening stones laid out on a sawdust-covered bench" className="absolute inset-0 h-full w-full object-cover image-rise" />
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/85 via-primary/35 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/75 to-primary/25 sm:via-primary/40 sm:to-transparent" />
         <div className="relative z-10 flex flex-1 flex-col justify-end px-5 pb-14 pt-28 sm:px-8 lg:px-12 lg:pb-20">
           <p className="mb-5 text-xs uppercase text-accent">The grain decides the spoon</p>
           <h1 className="max-w-4xl font-serif text-6xl leading-[0.88] sm:text-7xl lg:text-9xl">Split, not sawn —<br /><em className="text-secondary">the wood decides.</em></h1>
