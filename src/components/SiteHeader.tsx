@@ -84,15 +84,10 @@ export function SiteHeader() {
 export function SiteFooter() {
   return (
     <footer className="bg-primary px-5 py-14 text-primary-foreground sm:px-8 lg:px-12">
-      <div className="flex flex-col gap-12 md:flex-row md:items-end md:justify-between">
-        <div><p className="font-serif text-5xl">Riven Wood</p><p className="mt-4 max-w-sm text-sm leading-relaxed text-primary-foreground/60">A spoon carved from riven wood is not imposed on the wood. It is found within it.</p></div>
-        <nav aria-label="Footer navigation" className="flex flex-wrap gap-7 text-xs uppercase text-primary-foreground/60">
-          {links.map((l) => <Link key={l.to} to={l.to} className="hover:text-primary-foreground">{l.label}</Link>)}
-        </nav>
-      </div>
-      <div className="mt-12 border-t border-primary-foreground/15 pt-6">
+      <div><p className="font-serif text-5xl">Riven Wood</p><p className="mt-4 max-w-sm text-sm leading-relaxed text-primary-foreground/60">A spoon carved from riven wood is not imposed on the wood. It is found within it.</p></div>
+      <div className="mt-12 border-t border-primary-foreground/15 pt-6 text-center">
         <p className="text-[11px] uppercase tracking-[0.2em] text-primary-foreground/50">Follow the workshop</p>
-        <SocialLinks className="mt-4" tile />
+        <SocialLinks className="mt-4 justify-center" tile />
       </div>
       <nav aria-label="Footer link menus" className="mt-14 grid gap-10 border-t border-primary-foreground/15 pt-10 sm:grid-cols-2 lg:grid-cols-4">
         {footerMenus.map((menu) => (
