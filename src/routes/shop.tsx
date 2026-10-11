@@ -1,5 +1,6 @@
+import { useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
-import { products } from "@/lib/products";
+import { products, type Product } from "@/lib/products";
 
 export const Route = createFileRoute("/shop")({
   head: () => ({
@@ -15,14 +16,37 @@ export const Route = createFileRoute("/shop")({
   component: Shop,
 });
 
+const categories = ["All", "Spoons", "Spatulas", "Bowls", "Boards"] as const;
+
 function Shop() {
+  const [category, setCategory] = useState<(typeof categories)[number]>("All");
+  const visible: Product[] = category === "All" ? products : products.filter((p) => p.category === category);
+
   return (
     <main className="bg-background px-5 py-20 sm:px-8 lg:px-12 lg:py-28">
       <p className="text-xs uppercase text-secondary">The shop</p>
       <h1 className="mt-4 font-serif text-6xl text-primary sm:text-7xl">Carved by hand</h1>
       <p className="mt-6 max-w-2xl leading-relaxed text-primary/70">Every piece is unique — the grain, colour and shape vary from what you see here.</p>
+
+      <div className="mt-10 flex flex-wrap gap-2">
+        {categories.map((c) => (
+          <button
+            key={c}
+            type="button"
+            onClick={() => setCategory(c)}
+            className={`rounded-full border px-5 py-2 text-xs uppercase tracking-wide transition-colors ${
+              category === c
+                ? "border-primary bg-primary text-primary-foreground"
+                : "border-primary/25 text-primary/70 hover:border-primary/60 hover:text-primary"
+            }`}
+          >
+            {c}
+          </button>
+        ))}
+      </div>
+
       <div className="mt-14 grid gap-x-6 gap-y-14 sm:grid-cols-2 lg:grid-cols-4">
-        {products.map((p) => (
+        {visible.map((p) => (
           <article key={p.name}>
             <div className="overflow-hidden bg-muted"><img src={p.image} width={800} height={1008} loading="lazy" alt={p.alt} className="aspect-[4/5] w-full object-cover transition-transform duration-700 hover:scale-[1.025]" /></div>
             <div className="mt-4 flex items-start justify-between gap-3">

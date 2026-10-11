@@ -79,7 +79,7 @@ function Index() {
         </div>
         <p className="mt-8 max-w-2xl leading-relaxed text-primary/70">In spoon making, the grain is not a background detail — it decides the object. The bowl and handle are laid out so the fibres flow continuously from the tip of the handle, through the neck, and around into the bowl. That is why a riven spoon can be thin and light yet strong, and why no two pieces are identical: each carries the memory of its branch.</p>
         <div className="mt-10 grid gap-x-5 gap-y-12 sm:grid-cols-2 lg:grid-cols-4">
-          {products.map((product, index) => (
+          {products.filter((p) => p.featured).map((product, index) => (
             <article key={product.name} className={index % 2 ? "lg:mt-16" : ""}>
               <div className="overflow-hidden bg-muted"><img src={product.image} width={800} height={1008} loading="lazy" alt={product.alt} className="aspect-[4/5] w-full object-cover transition-transform duration-700 hover:scale-[1.025]" /></div>
               <div className="mt-4 flex items-start justify-between gap-3">
