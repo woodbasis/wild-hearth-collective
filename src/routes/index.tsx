@@ -21,7 +21,7 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-const fibres = ["Split, not sawn", "Green wood", "Whole fibres", "The crook of a branch", "Growth rings", "No two alike"];
+const fibres = ["Split, not sawn", "Dry wood", "Whole fibres", "The crook of a branch", "Growth rings", "No two alike"];
 const products = [
   { name: "Spoon — Crook", material: "Riven cherry", price: "$38", image: spoonImage, alt: "Hand-carved riven cherry spoon with a natural crook in the handle, grain flowing from handle tip into the bowl" },
   { name: "Spatula — Sweep", material: "Riven beech", price: "$32", image: spatulaImage, alt: "Hand-carved riven beech spatula with a thin swept blade and flowing grain" },
