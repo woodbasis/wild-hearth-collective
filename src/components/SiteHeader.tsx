@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { SocialLinks } from "@/components/SocialLinks";
 
 const links = [
   { to: "/", label: "Home" },
@@ -49,7 +50,11 @@ export function SiteFooter() {
           {links.map((l) => <Link key={l.to} to={l.to} className="hover:text-primary-foreground">{l.label}</Link>)}
         </nav>
       </div>
-      <div className="mt-12 flex flex-col justify-between gap-2 border-t border-primary-foreground/15 pt-5 text-[10px] uppercase text-primary-foreground/40 sm:flex-row"><span>© 2026 Riven Wood Workshop</span><span>The grain decides the spoon</span></div>
+      <div className="mt-12 border-t border-primary-foreground/15 pt-6">
+        <p className="text-[11px] uppercase tracking-[0.2em] text-primary-foreground/50">Follow the workshop</p>
+        <SocialLinks className="mt-4" tile />
+      </div>
+      <div className="mt-10 flex flex-col justify-between gap-2 border-t border-primary-foreground/15 pt-5 text-[10px] uppercase text-primary-foreground/40 sm:flex-row"><span>© 2026 Riven Wood Workshop</span><span>The grain decides the spoon</span></div>
     </footer>
   );
 }

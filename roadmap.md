@@ -11,3 +11,8 @@
 - [x] Replace all site copy with the "Riven Wood: The Grain Decides the Spoon" article — rebrand as Riven Wood, new section story (riving, grain strength, fibre-following utensils), and matching imagery (workshop, grain macro, spoon, spatula, cleaved board).
 - [x] Use the user's own photo of carving tools on a sawdust bench as the homepage hero, extended sideways into a wide banner so no tool is sliced off and the left stays clear for the headline.
 - [x] Replace the grain-section photo with the user's own picture of eight carved utensils on a sheepskin rug, widened sideways so every tool stays fully visible in the half-width column.
+- [x] Add shared header navigation and separate Home, About, Shop, Blog and Contact pages.
+- [x] Grow the Shop catalogue to 40 items (10 spoons, 10 spatulas, 10 bowls, 10 boards) with category filters.
+- [x] Give every Shop product its own photo in walnut, cherry, oak, maple or plum — 40 unique images, none repeated.
+- [x] Put 20 of the 40 Shop products on an old rustic wooden tabletop, leaving the other 20 on their original backgrounds.
+- [x] Move the 14 social media icons out of the top of the Contact page into the shared footer, where they now appear on every page.
