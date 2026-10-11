@@ -2,6 +2,7 @@ import { Link, linkOptions } from "@tanstack/react-router";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { SocialLinks } from "@/components/SocialLinks";
+import { Button } from "@/components/ui/button";
 
 const links = [
   { to: "/", label: "Home" },
@@ -54,18 +55,18 @@ export function SiteHeader() {
   const [open, setOpen] = useState(false);
   return (
     <header className="sticky top-0 z-40 border-b border-primary-foreground/15 bg-primary text-primary-foreground">
-      <div className="flex items-center justify-between px-5 py-4 sm:px-8 lg:px-12">
-        <Link to="/" className="font-serif text-2xl leading-none">Riven Wood</Link>
-        <nav aria-label="Primary navigation" className="hidden items-center gap-8 text-xs uppercase md:flex">
+      <div className="grid h-[var(--site-header-height)] grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-5 sm:px-8 lg:px-12 2xl:px-[84px]">
+        <Link to="/" className="min-w-0 truncate font-serif text-2xl leading-none 2xl:text-4xl">Riven Wood</Link>
+        <nav aria-label="Primary navigation" className="hidden shrink-0 items-center gap-8 text-xs uppercase md:flex 2xl:gap-14 2xl:text-base">
           {links.map((l) => (
             <Link key={l.to} to={l.to} activeOptions={{ exact: true }} className="border-b border-transparent pb-1 transition-opacity hover:opacity-70" activeProps={{ className: "border-accent text-accent" }}>
               {l.label}
             </Link>
           ))}
         </nav>
-        <button aria-label="Toggle menu" className="md:hidden" onClick={() => setOpen(!open)}>
+        <Button variant="ghost" size="icon" aria-label="Toggle menu" aria-expanded={open} className="shrink-0 hover:bg-primary-foreground/10 md:hidden" onClick={() => setOpen(!open)}>
           {open ? <X size={22} /> : <Menu size={22} />}
-        </button>
+        </Button>
       </div>
       {open && (
         <nav aria-label="Mobile navigation" className="flex flex-col border-t border-primary-foreground/15 px-5 py-4 md:hidden">

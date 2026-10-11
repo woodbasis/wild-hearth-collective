@@ -8,3 +8,5 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+- Keep homepage opening-screen sizing in shared header-height and hero CSS rules with breakpoint-based typography, so the photograph and material ticker fit together without viewport-scaled font sizes.

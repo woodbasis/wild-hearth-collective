@@ -3,6 +3,7 @@ import heroImage from "@/assets/hero-tools.jpg";
 import workshopImage from "@/assets/riving-workshop.jpg";
 import grainImage from "@/assets/grain-macro.jpg";
 import { products } from "@/lib/products";
+import { Button } from "@/components/ui/button";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -24,22 +25,22 @@ function Index() {
   return (
     <main className="overflow-hidden bg-background">
 
-      <section id="top" className="relative flex flex-col bg-primary text-primary-foreground pb-16 md:h-[min(70svh,55.8vw)] md:min-h-[520px] md:pb-0">
-        <img src={heroImage} width={1376} height={768} alt="Carving knives, a hooked spoon knife, a damascus axe and two sharpening stones laid out on a sawdust-covered bench" className="absolute inset-0 h-full w-full object-cover image-rise" />
+      <section id="top" className="home-hero relative flex flex-col bg-primary text-primary-foreground">
+        <img src={heroImage} width={1376} height={768} alt="Carving knives, a hooked spoon knife, a damascus axe and two sharpening stones laid out on a sawdust-covered bench" className="home-hero-photo absolute inset-0 h-full w-full object-cover image-rise" />
         <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/75 to-primary/25 sm:via-primary/40 sm:to-transparent" />
-        <div className="relative z-10 flex flex-1 flex-col justify-end px-5 pb-14 pt-16 sm:px-8 lg:px-12 lg:pb-20">
-          <p className="mb-5 text-xs uppercase text-accent">The grain decides the spoon</p>
-          <h1 className="max-w-4xl font-serif text-6xl leading-[0.88] sm:text-7xl lg:text-9xl">Rift & <br /><em className="text-secondary">Curve</em></h1>
-          <div className="mt-8 flex max-w-3xl flex-col gap-6 border-t border-primary-foreground/30 pt-6 md:flex-row md:items-end md:justify-between">
-            <p className="max-w-xl text-sm leading-relaxed text-primary-foreground/80 sm:text-base">Long before the sawmill, wood was split, not cut. We still open every log with wedge and froe, let the timber choose its line, and carve spoons that keep the strength of the living tree.</p>
-            <a href="#riving" className="shrink-0 bg-background px-6 py-3 text-sm font-medium text-primary transition-colors hover:bg-accent">How riving works</a>
+        <div className="home-hero-content relative z-10 flex flex-1 flex-col justify-end px-5 pb-14 pt-16 sm:px-8 lg:px-12 2xl:px-[84px]">
+          <p className="mb-5 text-xs uppercase text-accent 2xl:mb-8 2xl:text-base">The grain decides the spoon</p>
+          <h1 className="max-w-4xl font-serif text-7xl leading-[0.88] sm:text-8xl lg:text-9xl 2xl:max-w-6xl 2xl:text-[224px]">Rift & <br /><em className="text-secondary">Curve</em></h1>
+          <div className="mt-8 flex max-w-3xl flex-col gap-6 border-t border-primary-foreground/30 pt-6 md:flex-row md:items-end md:justify-between 2xl:mt-12 2xl:max-w-[1344px] 2xl:gap-10 2xl:pt-10">
+            <p className="min-w-0 max-w-xl text-sm leading-relaxed text-primary-foreground/80 sm:text-base 2xl:max-w-[1000px] 2xl:text-[26px]">Long before the sawmill, wood was split, not cut. We still open every log with wedge and froe, let the timber choose its line, and carve spoons that keep the strength of the living tree.</p>
+            <Button asChild variant="outline" className="h-11 shrink-0 self-start rounded-none border-0 px-6 text-sm text-primary md:self-auto 2xl:h-16 2xl:px-10 2xl:text-lg"><a href="#riving">How riving works</a></Button>
           </div>
         </div>
       </section>
 
-      <div className="overflow-hidden border-y border-primary/10 bg-background py-4">
+      <div className="home-ticker overflow-hidden border-y border-primary/10 bg-background py-4">
         <div className="material-marquee flex w-max whitespace-nowrap">
-          {[...fibres, ...fibres].map((fibre, index) => <span key={`${fibre}-${index}`} className={`px-8 font-serif text-2xl ${index % 3 === 1 ? "text-secondary" : index % 3 === 2 ? "text-accent-foreground" : "text-primary/70"}`}>{fibre} <i className="ml-8 text-primary/20">◆</i></span>)}
+          {[...fibres, ...fibres].map((fibre, index) => <span key={`${fibre}-${index}`} className={`px-8 font-serif text-2xl 2xl:px-12 2xl:text-3xl ${index % 3 === 1 ? "text-secondary" : index % 3 === 2 ? "text-accent-foreground" : "text-primary/70"}`}>{fibre} <i className="ml-8 text-primary/20 2xl:ml-12">◆</i></span>)}
         </div>
       </div>
 
