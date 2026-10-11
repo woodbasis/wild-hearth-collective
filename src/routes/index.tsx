@@ -45,7 +45,7 @@ function Index() {
       </header>
 
       <section id="top" className="relative min-h-[94svh] bg-primary text-primary-foreground">
-        <img src={heroImage} width={1200} height={1408} alt="Massive oak table with a cast iron cooking pot, thick butcher-block chopping board and a granite vessel of colourful flowers" className="absolute inset-0 h-full w-full object-cover image-rise" />
+        <img src={heroImage} width={1200} height={1408} alt="Massive oak table with a cast iron pan and rustic wooden spoon, thick weathered chopping board and a stoneware jug of colourful flowers, in front of a huge boulder-stone fireplace with burning logs" className="absolute inset-0 h-full w-full object-cover image-rise" />
         <div className="absolute inset-0 bg-gradient-to-r from-primary/85 via-primary/35 to-transparent" />
         <div className="relative z-10 flex min-h-[94svh] flex-col justify-end px-5 pb-14 pt-28 sm:px-8 lg:px-12 lg:pb-20">
           <p className="mb-5 text-xs uppercase text-accent">Issue 04 · The Kiln Room</p>
