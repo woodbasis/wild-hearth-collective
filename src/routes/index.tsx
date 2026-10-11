@@ -30,9 +30,9 @@ function Index() {
         <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/75 to-primary/25 sm:via-primary/40 sm:to-transparent" />
         <div className="home-hero-content relative z-10 flex flex-1 flex-col justify-end px-5 pb-14 pt-16 sm:px-8 lg:px-12 2xl:px-[84px]">
           <p className="mb-5 text-xs uppercase text-accent 2xl:mb-8 2xl:text-base">The grain decides the spoon</p>
-          <h1 className="max-w-4xl font-serif text-7xl leading-[0.88] sm:text-8xl lg:text-9xl 2xl:max-w-6xl 2xl:text-[192px]">Rift & <br /><em className="text-secondary">Curve</em></h1>
+          <h1 className="max-w-4xl font-serif text-7xl leading-[0.88] sm:text-8xl lg:text-9xl 2xl:max-w-6xl 2xl:text-[224px]">Rift & <br /><em className="text-secondary">Curve</em></h1>
           <div className="mt-8 flex max-w-3xl flex-col gap-6 border-t border-primary-foreground/30 pt-6 md:flex-row md:items-end md:justify-between 2xl:mt-12 2xl:max-w-[1344px] 2xl:gap-10 2xl:pt-10">
-            <p className="min-w-0 max-w-xl text-sm leading-relaxed text-primary-foreground/80 sm:text-base 2xl:max-w-[1000px] 2xl:text-xl">Long before the sawmill, wood was split, not cut. We still open every log with wedge and froe, let the timber choose its line, and carve spoons that keep the strength of the living tree.</p>
+            <p className="min-w-0 max-w-xl text-sm leading-relaxed text-primary-foreground/80 sm:text-base 2xl:max-w-[1000px] 2xl:text-[26px]">Long before the sawmill, wood was split, not cut. We still open every log with wedge and froe, let the timber choose its line, and carve spoons that keep the strength of the living tree.</p>
             <Button asChild variant="outline" className="h-11 shrink-0 self-start rounded-none border-0 px-6 text-sm text-primary md:self-auto 2xl:h-16 2xl:px-10 2xl:text-lg"><a href="#riving">How riving works</a></Button>
           </div>
         </div>

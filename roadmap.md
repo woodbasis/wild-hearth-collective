@@ -17,4 +17,4 @@
 - [x] Put 20 of the 40 Shop products on an old rustic wooden tabletop, leaving the other 20 on their original backgrounds.
 - [x] Move the 14 social media icons out of the top of the Contact page into the shared footer, where they now appear on every page.
 - [x] Add the four footer link columns from the reference (Discover, About, Resources, Social) below the social icons, with a real page behind every link.
-- [ ] Match the homepage reference proportions at 1920×1080 and verify smaller-screen layouts.
+- [x] Match the homepage reference proportions at 1920×1080 and verify smaller-screen layouts.

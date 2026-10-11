@@ -167,7 +167,8 @@
 
 @media (min-width: 1536px) {
   :root { --site-header-height: 80px; }
-  .home-hero { min-height: 760px; }
+  .home-hero { height: calc(100svh - var(--site-header-height) - 88px); min-height: 760px; }
+  .home-ticker { height: 88px; }
   .home-hero-content { padding-bottom: 120px; }
 }
 
