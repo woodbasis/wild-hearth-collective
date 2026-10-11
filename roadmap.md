@@ -7,3 +7,4 @@
 - [x] Push the hero's fireplace 2-3 m deeper into the room, rebuild it from boulders four times larger, and fill it with big burning logs instead of metal.
 - [x] Widen the gap between the hero's table and fireplace so the hearth reads several metres back across open flagstone floor.
 - [x] Take the fire out of the hero's fireplace — unlit logs, no flames or orange glow — leaving the rest of the scene untouched.
+- [x] Put the earlier hero photo back as the homepage hero: iron hood and hanging pot over low embers, table with pan, spoon, chopping board and wildflowers.
