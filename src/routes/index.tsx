@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import heroImage from "@/assets/terra-hero.jpg";
+import heroImage from "@/assets/hero-tools.jpg";
 import workshopImage from "@/assets/riving-workshop.jpg";
 import grainImage from "@/assets/grain-macro.jpg";
 import spoonImage from "@/assets/product-spoon.jpg";
@@ -45,7 +45,7 @@ function Index() {
       </header>
 
       <section id="top" className="relative min-h-[94svh] bg-primary text-primary-foreground">
-        <img src={heroImage} width={1376} height={768} alt="Rustic stone kitchen with a weathered wooden table holding a cast iron pan with a wooden spoon, a thick old chopping board and a jug of wildflowers, a stone fireplace with a hanging pot above glowing embers set back across the flagstone floor" className="absolute inset-0 h-full w-full object-cover image-rise" />
+        <img src={heroImage} width={1536} height={864} alt="Carving knives, a hooked spoon knife, a damascus axe and two sharpening stones laid out on a sawdust-covered bench" className="absolute inset-0 h-full w-full object-cover image-rise" />
         <div className="absolute inset-0 bg-gradient-to-r from-primary/85 via-primary/35 to-transparent" />
         <div className="relative z-10 flex min-h-[94svh] flex-col justify-end px-5 pb-14 pt-28 sm:px-8 lg:px-12 lg:pb-20">
           <p className="mb-5 text-xs uppercase text-accent">The grain decides the spoon</p>
