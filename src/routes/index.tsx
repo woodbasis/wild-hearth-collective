@@ -49,7 +49,7 @@ function Index() {
         <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/75 to-primary/25 sm:via-primary/40 sm:to-transparent" />
         <div className="relative z-10 flex flex-1 flex-col justify-end px-5 pb-14 pt-28 sm:px-8 lg:px-12 lg:pb-20">
           <p className="mb-5 text-xs uppercase text-accent">The grain decides the spoon</p>
-          <h1 className="max-w-4xl font-serif text-6xl leading-[0.88] sm:text-7xl lg:text-9xl">Split, not sawn —<br /><em className="text-secondary">the wood decides.</em></h1>
+          <h1 className="max-w-4xl font-serif text-6xl leading-[0.88] sm:text-7xl lg:text-9xl">Rift & <br /><em className="text-secondary">Curve</em></h1>
           <div className="mt-8 flex max-w-3xl flex-col gap-6 border-t border-primary-foreground/30 pt-6 md:flex-row md:items-end md:justify-between">
             <p className="max-w-xl text-sm leading-relaxed text-primary-foreground/80 sm:text-base">Long before the sawmill, wood was split, not cut. We still open every log with wedge and froe, let the timber choose its line, and carve spoons that keep the strength of the living tree.</p>
             <a href="#riving" className="shrink-0 bg-background px-6 py-3 text-sm font-medium text-primary transition-colors hover:bg-accent">How riving works</a>
